@@ -1,0 +1,9 @@
+Microsoft Windows [Version 10.0.26200.9457]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\PALAK>pip freeze > requirements.txt
+
+C:\Users\PALAK>pip freeze > requirements.txtpip freeze > requirements.txtpip freeze > requirements.txtpip freeze > requirements.txt
+
+C:\Users\PALAK>
+C:\Users\PALAK>
