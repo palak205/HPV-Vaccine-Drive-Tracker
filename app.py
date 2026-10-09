@@ -11,8 +11,42 @@ st.set_page_config(
 
 # Custom Styling
 st.markdown("""
-    
-""", unsafe_allow_html=True)
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"], .stApp, .stMarkdown, button, input {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Page title area */
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.3px; }
+
+/* Cards (bordered containers) */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform .15s ease, border-color .15s ease;
+}
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    border-color: #ff4b8b;
+    transform: translateY(-2px);
+}
+
+/* Metrics */
+[data-testid="stMetricValue"] { color: #ff4b8b; font-weight: 700; }
+
+/* Register button */
+.stLinkButton a {
+    background: #ff4b8b;
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.stLinkButton a:hover { background: #e63977; }
+</style>
+""", unsafe_allow_html=True) 
 
 # Header Section
 # Header Section
