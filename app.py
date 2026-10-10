@@ -190,8 +190,9 @@ else:
                 
 import streamlit.components.v1 as components
 
-_, right = st.columns([4, 1])
+st.set_page_config(...)          # existing
 
+_, right = st.columns([4, 1])    # chatbot button, now near the top
 with right:
     with st.popover("💬 Ask the chatbot", use_container_width=True):
         components.html(
@@ -202,6 +203,9 @@ with right:
             """,
             height=450,
         )
+
+st.write("Empowering Prevention ...")   # your existing tagline
+# metrics, directory, etc.
         
 
                 
