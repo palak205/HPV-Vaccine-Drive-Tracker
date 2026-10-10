@@ -1,13 +1,26 @@
 import streamlit as st
 import pandas as pd
 import glob
+import streamlit.components.v1 as components
 
 # Page configuration
 st.set_page_config(
-    page_title="CerviCare — HPV Drive Sites Finder", 
-    page_icon="🌸", 
+    page_title="CerviCare — HPV Drive Sites Finder",
+    page_icon="🌸",
     layout="wide"
 )
+_, right = st.columns([4, 1])
+with right:
+    with st.popover("💬 Ask the chatbot", use_container_width=True):
+        components.html(
+            """
+            <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-24222ab6-c8fd-416d-a4f3-e509307f2ba4" data-elfsight-app-lazy></div>
+            """,
+            height=450,
+        )
+        
 
 # Custom Styling
 st.markdown("""
