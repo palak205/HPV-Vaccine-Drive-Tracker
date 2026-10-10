@@ -189,9 +189,9 @@ else:
                 render_card(idx, row)
                 
 import streamlit.components.v1 as components
-
-components.html(
-    """
+with st.sidebar:
+  components.html( """
+    
     <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
     <div class="elfsight-app-24222ab6-c8fd-416d-a4f3-e509307f2ba4" data-elfsight-app-lazy></div>
