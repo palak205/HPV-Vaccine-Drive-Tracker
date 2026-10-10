@@ -190,23 +190,18 @@ else:
                 
 import streamlit.components.v1 as components
 
-left, right = st.columns([3, 1])
-
-with left:
-    # your existing title / tagline / the 3 metrics go here
-    pass
+_, right = st.columns([4, 1])
 
 with right:
-    components.html(
-        """
-        <style>
-          html { zoom: 1.1; }
-        </style>
-        <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
-        <script src="https://elfsightcdn.com/platform.js" async></script>
-        <div class="elfsight-app-24222ab6-c8fd-416d-a4f3-e509307f2ba4" data-elfsight-app-lazy></div>
-        """,
-        height=300,
-    )
+    with st.popover("💬 Ask the chatbot", use_container_width=True):
+        components.html(
+            """
+            <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-24222ab6-c8fd-416d-a4f3-e509307f2ba4" data-elfsight-app-lazy></div>
+            """,
+            height=450,
+        )
+        
 
                 
